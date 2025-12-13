@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./Card";
+import Footer from "./Footer";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 export default function Home() {
   return (
@@ -30,14 +33,9 @@ export default function Home() {
           Universtity with a Bachelor's degree in Software Systems.
         </div>
       </div>
-      <div>Technical Skills</div>
-      <div>
-        <h1>Projects</h1>
-        <div className="flex">
-          <Card></Card>
-          <Card></Card>
-        </div>
-      </div>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Footer></Footer>
     </div>
   );
 }
