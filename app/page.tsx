@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import Card from "./Card";
 import Footer from "./Footer";
 import Projects from "./Projects";
 import Skills from "./Skills";
@@ -8,8 +6,8 @@ import Skills from "./Skills";
 export default function Home() {
   return (
     <div className="">
-      <ul className="menu menu-horizontal lg:menu-horizontal bg-base-200 flex justify-between w-full">
-        <Link href={"/"} className="mx-2">
+      <ul className="navbar bg-base-200 shadow-sm flex justify-between w-full">
+        <Link href={"/"} className="mx-2 text-xl">
           Jason Li
         </Link>
         <div>
