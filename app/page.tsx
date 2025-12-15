@@ -2,36 +2,19 @@ import Link from "next/link";
 import Footer from "./Footer";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Navbar from "./Navbar";
+import Work from "./Work";
+import Description from "./Description";
 
 export default function Home() {
   return (
     <div className="">
-      <ul className="navbar bg-base-200 shadow-sm flex justify-between w-full">
-        <Link href={"/"} className="mx-2 text-xl">
-          Jason Li
-        </Link>
-        <div>
-          <Link href={"/about"} className="mx-2">
-            About Me
-          </Link>
-          <Link href={"/projects"} className="mx-2">
-            Projects
-          </Link>
-          <Link href={"/work"} className="mx-2">
-            Work History
-          </Link>
-        </div>
-      </ul>
-      <div className="ml-10 my-10">
-        <div>
-          <h1>Jason Li</h1>
-        </div>
-        <div className="card text-left">
-          Hi! My name is Jason Li. I am a new graduate from Simon Fraser
-          Universtity with a Bachelor's degree in Software Systems.
-        </div>
+      <Navbar></Navbar>
+      <div className="bg-base-200">
+        <Description></Description>
+        <Skills></Skills>
       </div>
-      <Skills></Skills>
+      <Work></Work>
       <Projects></Projects>
       <Footer></Footer>
     </div>

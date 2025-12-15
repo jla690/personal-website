@@ -1,6 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
+const iconClassname = "hover:text-blue-400 transition-colors";
+
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
@@ -12,10 +14,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub
-              size={24}
-              className="hover:text-green-300 transition-colors"
-            ></FaGithub>
+            <FaGithub size={24} className={iconClassname}></FaGithub>
           </a>
           <a
             href="https://www.linkedin.com/in/jason-li-115732174/"
@@ -23,10 +22,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin
-              size={24}
-              className="hover:text-green-300 transition-colors"
-            ></FaLinkedin>
+            <FaLinkedin size={24} className={iconClassname}></FaLinkedin>
           </a>
           <a
             href="mailto:jason.l.i@hotmail.com"
@@ -34,10 +30,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaEnvelope
-              size={24}
-              className="hover:text-green-300 transition-colors"
-            ></FaEnvelope>
+            <FaEnvelope size={24} className={iconClassname}></FaEnvelope>
           </a>
         </div>
       </nav>
