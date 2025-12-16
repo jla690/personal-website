@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 const underlineClasses: string =
-  "mx-2 hover:decoration-blue-400 max-w-0 hover:max-w-full hover:underline decoration-2 underline-offset-8 transition-all duration-300";
+  "mx-2 hover:decoration-green-400/80 max-w-0 hover:max-w-full hover:underline decoration-2 underline-offset-8 transition-all duration-300";
 
 const Navbar = () => {
   return (
