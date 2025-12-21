@@ -1,28 +1,40 @@
 import Link from "next/link";
 import React from "react";
+import { RiExternalLinkLine } from "react-icons/ri";
 
-const underlineClasses: string =
-  "mx-2 hover:decoration-green-400/80 max-w-0 hover:max-w-full hover:underline decoration-2 underline-offset-8 transition-all duration-300";
+const linkClasses = "relative mx-2 inline-flex items-center gap-2 group";
+
+const underlineClasses =
+  "absolute left-0 -bottom-1 h-[2px] w-0 bg-green-400/80 transition-all duration-300 group-hover:w-full";
 
 const Navbar = () => {
   return (
-    <ul className="navbar shadow-sm flex justify-between w-full sticky top-0 z-50 bg-black/30 backdrop-blur-md transition-all duration-300 ease-in-out">
-      <Link href={"/"} className="mx-2 text-xl">
+    <ul className="navbar shadow-sm flex justify-between w-full sticky top-0 z-50 bg-black/30 backdrop-blur-md">
+      <Link href="/" className="mx-2 text-xl">
         Jason Li
       </Link>
-      <div className="">
-        <Link href={"/#about"} className={underlineClasses}>
+
+      <div className="flex items-center">
+        <Link href="/#about" className={linkClasses}>
           About Me
+          <span className={underlineClasses} />
         </Link>
-        <Link href={"/#work"} className={underlineClasses}>
+
+        <Link href="/#work" className={linkClasses}>
           Work History
+          <span className={underlineClasses} />
         </Link>
-        <Link href={"/#projects"} className={underlineClasses}>
+
+        <Link href="/#projects" className={linkClasses}>
           Projects
+          <span className={underlineClasses} />
         </Link>
-        <Link href={"/#resume"} className={underlineClasses}>
+
+        <a href="/resume.pdf" target="_blank" className={linkClasses}>
           Resume
-        </Link>
+          <RiExternalLinkLine size={18} />
+          <span className={underlineClasses} />
+        </a>
       </div>
     </ul>
   );
