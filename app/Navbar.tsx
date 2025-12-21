@@ -5,11 +5,11 @@ import { RiExternalLinkLine } from "react-icons/ri";
 const linkClasses = "relative mx-2 inline-flex items-center gap-2 group";
 
 const underlineClasses =
-  "absolute left-0 -bottom-1 h-[2px] w-0 bg-green-400/80 transition-all duration-300 group-hover:w-full";
+  "absolute left-0 -bottom-1 h-[2px] w-0 bg-sky-400 transition-all duration-300 group-hover:w-full";
 
 const Navbar = () => {
   return (
-    <ul className="navbar shadow-sm flex justify-between w-full sticky top-0 z-50 bg-black/30 backdrop-blur-md">
+    <ul className="navbar shadow-sm flex justify-between w-full sticky top-0 z-50 bg-slate-900/40 backdrop-blur-md">
       <Link href="/" className="mx-2 text-xl">
         Jason Li
       </Link>
