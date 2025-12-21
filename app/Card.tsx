@@ -21,7 +21,10 @@ const Card = ({ title, link, description, isPublic, languages }: Props) => {
           <div className="flex items-end justify-between w-full">
             <div>
               {languages.map((language, i) => (
-                <div key={i} className="badge badge-info badge-outline mx-1">
+                <div
+                  key={i}
+                  className="badge badge-outline badge-warning badge-sm mx-1"
+                >
                   {language}
                 </div>
               ))}
@@ -38,7 +41,7 @@ const Card = ({ title, link, description, isPublic, languages }: Props) => {
                 </button>
               </a>
             ) : (
-              <div></div>
+              <></>
             )}
           </div>
         </div>
