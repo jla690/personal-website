@@ -10,7 +10,7 @@ export default function ThemeToggle(){
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
-    try { localStorage.setItem("theme", theme) } catch (e) {}
+    try { localStorage.setItem("theme", theme) } catch {}
   }, [theme]);
 
   return (
