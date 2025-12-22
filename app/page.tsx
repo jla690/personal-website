@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="">
       <Navbar></Navbar>
-      <div className="bg-base-200">
+      <div className="bg-base-100">
         <Description></Description>
         <Skills></Skills>
       </div>

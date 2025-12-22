@@ -9,10 +9,10 @@ interface Props {
   description: string;
 }
 
-const Card = ({ title, link, description, isPublic, languages }: Props) => {
+const Card = ({ title, link, description, isPublic, languages = [] }: Props) => {
   return (
     <>
-      <div className="card card-border bg-base-200 text-neutral-content card-md hover:bg-neutral/50 transition-colors">
+      <div className="card card-border bg-base-100 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
         <div className="card-body text-center items-end justify-between">
           <div className="w-full">
             <div className="card-title w-full justify-center">{title}</div>
@@ -23,7 +23,7 @@ const Card = ({ title, link, description, isPublic, languages }: Props) => {
               {languages.map((language, i) => (
                 <div
                   key={i}
-                  className="badge badge-outline badge-warning badge-sm mx-1"
+                  className="badge badge-outline badge-warning badge-sm rounded-sm mx-1"
                 >
                   {language}
                 </div>
@@ -36,7 +36,7 @@ const Card = ({ title, link, description, isPublic, languages }: Props) => {
                 rel="noopener noreferrer"
                 aria-label="Project Link"
               >
-                <button className="btn btn-outline btn-primary">
+                <button className="btn btn-outline btn-primary rounded-sm duration-100">
                   <FaGithub size={14}></FaGithub>
                 </button>
               </a>

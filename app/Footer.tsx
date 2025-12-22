@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const iconClassname = "hover:text-green-400/80 transition-colors";
+const iconClassname = "hover:text-sky-400 transition-colors duration-300";
 
 const Footer = () => {
   return (

@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dim" className="scroll-smooth">
+    <html lang="en" data-theme="night" className="scroll-smooth">
       <body className={`${roboto.variable} antialiased`}>{children}</body>
     </html>
   );

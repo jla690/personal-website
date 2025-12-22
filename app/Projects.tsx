@@ -13,20 +13,20 @@ const Projects = () => {
           title="Unofficial AniList Clone"
           link="https://github.com/jla690/unofficial_anilist_program"
           description="Full-stack web app to retrieve and display real-time anime and manga data"
-          languages={["JavaScript", "Python"]}
+          languages={["TypeScript", "Python"]}
         ></Card>
         <Card
           isPublic={true}
           link="https://github.com/jla690/experience-checker"
           title="LinkedIn Experience Checker"
           description="Chrome extension to summarize YOE data in LinkedIn job postings"
-          languages={["JavaScript"]}
+          languages={["TypeScript"]}
         ></Card>
         <Card
           isPublic={false}
           title="Decaf Compiler (Not Public)"
           description="Fully functional compiler for the Decaf language (Java-like teaching language)"
-          languages={["C++", "Yacc", "Bison"]}
+          languages={["C++", "Yacc", "Lex"]}
         ></Card>
         <Card
           isPublic={true}
