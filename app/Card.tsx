@@ -12,7 +12,7 @@ interface Props {
 const Card = ({ title, link, description, isPublic, languages }: Props) => {
   return (
     <>
-      <div className="card card-border bg-base-100 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm">
+      <div className="card card-border bg-base-100 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
         <div className="card-body text-center items-end justify-between">
           <div className="w-full">
             <div className="card-title w-full justify-center">{title}</div>
@@ -36,7 +36,7 @@ const Card = ({ title, link, description, isPublic, languages }: Props) => {
                 rel="noopener noreferrer"
                 aria-label="Project Link"
               >
-                <button className="btn btn-outline btn-primary rounded-sm">
+                <button className="btn btn-outline btn-primary rounded-sm duration-100">
                   <FaGithub size={14}></FaGithub>
                 </button>
               </a>
