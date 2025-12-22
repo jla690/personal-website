@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 
 type HeroProps = {
@@ -18,17 +19,13 @@ export default function Hero({
       <a href="#main" className="skip-link">Skip to content</a>
 
       <div className="header" role="banner">
-        <button
-          className="brand"
-          onClick={() => window.location.href = '/'}
-          style={{background:'transparent', border:0, cursor:'pointer'}}
-        >
+        <Link href="/" className="brand">
           <div className="logo">J</div>
           <div>
             <div style={{fontWeight:700}}>Jake Larsen</div>
             <div style={{fontSize:12, color:"var(--muted)"}}>Engineer • Frontend • Systems</div>
           </div>
-        </button>
+        </Link>
 
         <div style={{display:"flex", gap:12, alignItems:"center"}}>
           <ThemeToggle />
