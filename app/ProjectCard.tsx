@@ -9,7 +9,13 @@ interface Props {
   description: string;
 }
 
-const Card = ({ title, link, description, isPublic, languages = [] }: Props) => {
+const ProjectCard = ({
+  title,
+  link,
+  description,
+  isPublic,
+  languages = [],
+}: Props) => {
   return (
     <>
       <div className="card card-border bg-base-100 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
@@ -50,4 +56,4 @@ const Card = ({ title, link, description, isPublic, languages = [] }: Props) => 
   );
 };
 
-export default Card;
+export default ProjectCard;
