@@ -18,7 +18,7 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <>
-      <div className="card card-border bg-base-100 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
+      <div className="card card-border bg-base-200 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
         <div className="card-body text-center items-end justify-between">
           <div className="w-full">
             <div className="card-title w-full justify-center">{title}</div>

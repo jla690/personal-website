@@ -33,6 +33,7 @@ const Footer = () => {
             <FaEnvelope size={24} className={iconClassname}></FaEnvelope>
           </a>
         </div>
+        <div className="pt-3">© {new Date().getFullYear()} Jason Li</div>
       </nav>
     </footer>
   );
