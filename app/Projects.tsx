@@ -3,11 +3,11 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div>
-      <h1 className="text-2xl font-bold my-4 mx-10 text-center" id="projects">
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-2xl font-bold my-4 mx-10" id="projects">
         Projects
       </h1>
-      <div className="mx-10 grid grid-cols-3 gap-4 my-10">
+      <div className="mx-10 grid grid-cols-2 gap-4 my-10">
         <ProjectCard
           isPublic={true}
           title="Unofficial AniList Clone"

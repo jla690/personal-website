@@ -18,22 +18,18 @@ const ProjectCard = ({
 }: Props) => {
   return (
     <>
-      <div className="card card-border bg-base-200 text-neutral-content card-md hover:bg-neutral transition-colors rounded-sm duration-100">
+      <div className="card card-border bg-base-100 border-gray-200 card-md hover:border-gray-900 transition-colors duration-100">
+        <div className="relative w-full h-48">
+          <img></img>
+        </div>
         <div className="card-body text-center items-end justify-between">
           <div className="w-full">
-            <div className="card-title w-full justify-center">{title}</div>
-            <div className="text-center justify-center">{description}</div>
+            <div className="card-title w-full text-left">{title}</div>
+            <div className="text-left">{description}</div>
           </div>
           <div className="flex items-end justify-between w-full">
-            <div>
-              {languages.map((language, i) => (
-                <div
-                  key={i}
-                  className="badge badge-outline badge-warning badge-sm rounded-sm mx-1"
-                >
-                  {language}
-                </div>
-              ))}
+            <div className="text-xs text-gray-500 text-left">
+              {languages.join(", ")}
             </div>
             {isPublic ? (
               <a

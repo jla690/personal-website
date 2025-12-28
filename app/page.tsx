@@ -12,10 +12,14 @@ export default function Home() {
       <Navbar></Navbar>
       <div className="bg-base-100">
         <Description></Description>
+      </div>
+      <div className="bg-base-200 py-20">
         <Skills></Skills>
       </div>
       <Work></Work>
-      <Projects></Projects>
+      <div className="bg-base-200 py-20 px-20">
+        <Projects></Projects>
+      </div>
       <Footer></Footer>
     </div>
   );
