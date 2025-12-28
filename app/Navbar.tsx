@@ -3,7 +3,7 @@ import React from "react";
 import { RiExternalLinkLine } from "react-icons/ri";
 
 const linkClasses =
-  "relative mx-2 inline-flex items-center gap-1 group hover:text-black";
+  "relative mx-2 inline-flex items-center gap-1 group hover:text-black transition-colors";
 
 const Navbar = () => {
   return (

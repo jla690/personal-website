@@ -16,21 +16,13 @@ const WorkCard = ({
   languages,
 }: Props) => {
   return (
-    <div className="card card-border bg-base-100 w-200">
-      <div className="card-body">
-        <div className="card-title justify-center">{jobTitle}</div>
-        <div className="flex items-end justify-between w-full">
-          <div>
-            {languages.map((language, i) => (
-              <div
-                key={i}
-                className="badge badge-outline badge-warning badge-sm rounded-sm mx-1"
-              >
-                {language}
-              </div>
-            ))}
-          </div>
-        </div>
+    <div className="border-l-2 pl-6">
+      <div className="flex-1">
+        <div className="card-title text-xl font-medium mb-1">{jobTitle}</div>
+        <div className="text-gray-600 mb-1">{company}</div>
+        <div className="text-gray-600 mb-3 text-sm">{date}</div>
+        <div className="text-sm text-gray-500 mb-2">{languages.join(", ")}</div>
+        <div className="text-gray-600">{description}</div>
       </div>
     </div>
   );

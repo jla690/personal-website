@@ -6,7 +6,7 @@ const Skills = () => {
       <h2 id="skills" className="font-medium text-3xl mb-6">
         Technical Skills
       </h2>
-      <div className="space-y-3 grid grid-cols-2">
+      <div className="space-y-3 grid grid-cols-2 gap-8">
         <div className="">
           <div className="font-semibold">Languages: </div>
           <div className="text-sm">

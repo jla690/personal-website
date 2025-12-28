@@ -4,9 +4,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold my-4 mx-10" id="projects">
-        Projects
-      </h1>
+      <h1 className="text-3xl font-medium my-4 mx-10">Projects</h1>
       <div className="mx-10 grid grid-cols-2 gap-4 my-10">
         <ProjectCard
           isPublic={true}
@@ -18,7 +16,7 @@ const Projects = () => {
         <ProjectCard
           isPublic={true}
           link="https://github.com/jla690/experience-checker"
-          title="LinkedIn Experience Checker"
+          title="Job Posting Experience Checker"
           description="Chrome extension to summarize YOE data in LinkedIn job postings"
           languages={["TypeScript"]}
         ></ProjectCard>
