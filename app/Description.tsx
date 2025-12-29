@@ -7,7 +7,7 @@ const Description = () => {
       <div>
         <h1 className="text-4xl md:text-5xl font-medium pb-6">Jason Li</h1>
       </div>
-      <div className="text-lg leading-relaxed  max-w-2xl mb-8 text-gray-600">
+      <div className="text-lg leading-relaxed max-w-2xl mb-8 text-gray-600">
         Hi! I am a new graduate from Simon Fraser University with a
         Bachelor&apos;s degree in Software Systems. I am based in Vancouver,
         Canada and I previously worked on backend database drivers in my co-ops.
