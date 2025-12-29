@@ -10,12 +10,18 @@ export default function Home() {
   return (
     <div className="">
       <Navbar></Navbar>
-      <div className="bg-base-100">
+      <div className="" id="about">
         <Description></Description>
+      </div>
+      <div className="bg-gray-50 py-20">
         <Skills></Skills>
       </div>
-      <Work></Work>
-      <Projects></Projects>
+      <div className="py-24 px-6" id="work">
+        <Work></Work>
+      </div>
+      <div className="bg-gray-50 py-20 px-20" id="projects">
+        <Projects></Projects>
+      </div>
       <Footer></Footer>
     </div>
   );

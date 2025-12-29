@@ -1,26 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, JetBrains_Mono, Roboto } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "700"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -34,8 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night" className="scroll-smooth">
-      <body className={`${roboto.variable} antialiased`}>{children}</body>
+    <html
+      lang="en"
+      data-theme="lofi"
+      className={`${inter.variable} scroll-smooth`}
+    >
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }

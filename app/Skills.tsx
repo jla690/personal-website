@@ -2,30 +2,32 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div className="px-15 pb-20 max-w-4xl mx-auto">
-      <h2 id="skills" className="font-bold text-2xl mb-6">
+    <div className="max-w-4xl mx-auto">
+      <h2 id="skills" className="font-medium text-3xl mb-6">
         Technical Skills
       </h2>
-      <div className="space-y-3">
+      <div className="space-y-3 grid grid-cols-2 gap-8">
         <div>
-          <span className="font-bold">Languages: </span>
-          <span>C++, C, Java, Python, TypeScript, JavaScript, SQL</span>
+          <div className="font-semibold">Languages: </div>
+          <div className="text-sm">
+            C++, C, Java, Python, TypeScript, JavaScript, SQL
+          </div>
         </div>
         <div>
-          <span className="font-bold">Libraries/Frameworks: </span>
-          <span>
+          <div className="font-semibold">Libraries/Frameworks: </div>
+          <div className="text-sm">
             AWS SDK, Axios, FastAPI, Flask, React, Tailwind CSS, Next.js
-          </span>
+          </div>
         </div>
         <div>
-          <span className="font-bold">Testing Frameworks: </span>
-          <span>JUnit, Mockito, Jest, Mocha</span>
+          <div className="font-semibold">Testing Frameworks: </div>
+          <div className="text-sm">JUnit, Mockito, Jest, Mocha</div>
         </div>
         <div>
-          <span className="font-bold">Other Technologies: </span>
-          <span>
+          <div className="font-semibold">Other Technologies: </div>
+          <div className="text-sm">
             Git, Perforce, Linux, Amazon RDS, MySQL, PostgreSQL, GraphQL
-          </span>
+          </div>
         </div>
       </div>
     </div>
