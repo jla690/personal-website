@@ -7,7 +7,7 @@ const Skills = () => {
         Technical Skills
       </h2>
       <div className="space-y-3 grid grid-cols-2 gap-8">
-        <div className="">
+        <div>
           <div className="font-semibold">Languages: </div>
           <div className="text-sm">
             C++, C, Java, Python, TypeScript, JavaScript, SQL
