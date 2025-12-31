@@ -1,7 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const iconClassname = "text-gray-500 hover:text-gray-900 transition-colors";
+const iconClassname =
+  "text-base-content/60 hover:text-base-content transition-colors";
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
             <FaEnvelope size={24} className={iconClassname}></FaEnvelope>
           </a>
         </div>
-        <div className="pt-3 text-gray-500">
+        <div className="pt-3 text-base-content/60">
           © {new Date().getFullYear()} Jason Li
         </div>
       </nav>

@@ -8,23 +8,30 @@ const Projects = () => {
       <div className="grid grid-cols-2 gap-4 my-10">
         <ProjectCard
           isPublic={true}
-          title="Unofficial AniList Clone"
-          link="https://github.com/jla690/unofficial_anilist_program"
-          description="Full-stack web app to retrieve and display real-time anime and manga data"
-          languages={["TypeScript", "Python"]}
-        ></ProjectCard>
-        <ProjectCard
-          isPublic={true}
           link="https://github.com/jla690/experience-checker"
           title="Job Posting Experience Checker"
           description="Chrome extension to summarize YOE data in LinkedIn job postings"
           languages={["TypeScript"]}
         ></ProjectCard>
         <ProjectCard
+          isPublic={true}
+          title="Unofficial AniList Clone"
+          link="https://github.com/jla690/unofficial_anilist_program"
+          description="Full-stack web app to retrieve and display real-time anime and manga data"
+          languages={["TypeScript", "Python"]}
+        ></ProjectCard>
+        <ProjectCard
           isPublic={false}
           title="Decaf Compiler (Not Public)"
           description="Fully functional compiler for the Decaf language (Java-like teaching language)"
           languages={["C++", "Yacc", "Lex"]}
+        ></ProjectCard>
+        <ProjectCard
+          isPublic={true}
+          title="Integral Visualizer"
+          description="Program to visualize different integration methods on different functions"
+          link="https://github.com/jla690/integral-visualizer"
+          languages={["Python"]}
         ></ProjectCard>
         <ProjectCard
           isPublic={true}
@@ -38,13 +45,6 @@ const Projects = () => {
           title="Item Manager"
           description="Website that can be used for cataloguing items like a store would. Uses SQLite database"
           link="https://github.com/jla690/flask-website-project"
-          languages={["Python"]}
-        ></ProjectCard>
-        <ProjectCard
-          isPublic={true}
-          title="Integral Visualizer"
-          description="Program to visualize different integration methods on different functions"
-          link="https://github.com/jla690/integral-visualizer"
           languages={["Python"]}
         ></ProjectCard>
       </div>
