@@ -4,15 +4,8 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-medium my-4 mx-10">Projects</h1>
-      <div className="mx-10 grid grid-cols-2 gap-4 my-10">
-        <ProjectCard
-          isPublic={true}
-          title="Unofficial AniList Clone"
-          link="https://github.com/jla690/unofficial_anilist_program"
-          description="Full-stack web app to retrieve and display real-time anime and manga data"
-          languages={["TypeScript", "Python"]}
-        ></ProjectCard>
+      <h1 className="text-3xl font-medium my-4 text-base-content">Projects</h1>
+      <div className="grid grid-cols-2 gap-4 my-10">
         <ProjectCard
           isPublic={true}
           link="https://github.com/jla690/experience-checker"
@@ -21,10 +14,24 @@ const Projects = () => {
           languages={["TypeScript"]}
         ></ProjectCard>
         <ProjectCard
+          isPublic={true}
+          title="Unofficial AniList Clone"
+          link="https://github.com/jla690/unofficial_anilist_program"
+          description="Full-stack web app to retrieve and display real-time anime and manga data"
+          languages={["TypeScript", "Python"]}
+        ></ProjectCard>
+        <ProjectCard
           isPublic={false}
           title="Decaf Compiler (Not Public)"
           description="Fully functional compiler for the Decaf language (Java-like teaching language)"
           languages={["C++", "Yacc", "Lex"]}
+        ></ProjectCard>
+        <ProjectCard
+          isPublic={true}
+          title="Integral Visualizer"
+          description="Program to visualize different integration methods on different functions"
+          link="https://github.com/jla690/integral-visualizer"
+          languages={["Python"]}
         ></ProjectCard>
         <ProjectCard
           isPublic={true}
@@ -38,13 +45,6 @@ const Projects = () => {
           title="Item Manager"
           description="Website that can be used for cataloguing items like a store would. Uses SQLite database"
           link="https://github.com/jla690/flask-website-project"
-          languages={["Python"]}
-        ></ProjectCard>
-        <ProjectCard
-          isPublic={true}
-          title="Integral Visualizer"
-          description="Program to visualize different integration methods on different functions"
-          link="https://github.com/jla690/integral-visualizer"
           languages={["Python"]}
         ></ProjectCard>
       </div>
