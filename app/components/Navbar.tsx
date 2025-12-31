@@ -89,6 +89,7 @@ const Navbar = () => {
         <input
           type="checkbox"
           className="toggle theme-controller"
+          aria-label="Toggle color theme"
           checked={theme === "dark"}
           onChange={(e) => setTheme(e.target.checked ? "dark" : "lofi")}
         />
