@@ -15,7 +15,6 @@ const Navbar = () => {
   const [theme, setTheme] = useTheme();
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
     console.log(theme);
   }, [theme]);
 
