@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-medium my-4">Projects</h1>
+      <h1 className="text-3xl font-medium my-4 text-base-content">Projects</h1>
       <div className="grid grid-cols-2 gap-4 my-10">
         <ProjectCard
           isPublic={true}
