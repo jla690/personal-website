@@ -14,8 +14,6 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [theme, setTheme] = useTheme();
 
-  useEffect(() => {}, [theme]);
-
   useEffect(() => {
     const elements: HTMLElement[] = sections
       .map((section) => document.getElementById(section))
