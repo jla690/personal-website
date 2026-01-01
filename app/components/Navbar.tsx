@@ -88,7 +88,6 @@ const Navbar = () => {
         <label className="toggle text-base-content">
           <input
             type="checkbox"
-            value="synthwave"
             className="theme-controller"
             aria-label="Toggle color theme"
             checked={theme === "dark"}
