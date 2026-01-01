@@ -6,7 +6,7 @@ const iconClassname =
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-base-100 text-base-content rounded p-10">
+    <footer className="footer footer-horizontal footer-center bg-base-100 text-base-content p-10 border-base-content/20 border-t">
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
