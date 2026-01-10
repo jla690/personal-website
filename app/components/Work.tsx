@@ -12,7 +12,7 @@ const Work = () => {
           jobTitle="Software Developer 1"
           date="January 2024 - August 2024"
           description={[
-            "• Worked on a Java JDBC Wrapper and a NodeJS Wrapper in an agile development style",
+            "• Worked on Java JDBC Wrapper and NodeJS Wrapper projects in an agile development style",
             "• Wrote custom regex to support endpoints from Chinese AWS regions on JDBC Wrapper",
             "• Ported over 5+ plugins from JDBC Wrapper to NodeJS Wrapper, reducing feature gaps between the two",
             "• Added AD FS and Okta support into NodeJS Wrapper, providing additional authentication methods for users",
@@ -29,9 +29,9 @@ const Work = () => {
             "• Developed unit tests that improved reliability of key features and reduced regressions during development",
             "• Worked on Primary Key/Foreign Key support for JDBC database driver, allowing for more complete SQL support",
             "• Collaborated with clients to discuss potential solutions for new features and bug fixes, reducing ambiguity",
-            "• Implemented feature for automatically closing stale HTTP connections, allowing SQL queries exceeding 5 minutes to complete successfully",
+            "• Implemented feature for custom stale HTTP connection timeouts, allowing for successful long-running SQL queries",
           ]}
-          company="Insight Software"
+          company="Magnitude Software"
           languages={["C++", "Java", "SQL", "ODBC", "JDBC"]}
         ></WorkCard>
       </div>
